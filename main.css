@@ -1,20 +1,13 @@
-:root {
-  --highlight: #141926;
-  --primary: #129fc0;
-  --off-white: #f6f6f6;
-  --sans: "Noto Sans JP", sans-serif;
-}
-
 body {
-  font-family: var(--sans);
+  font-family: "Noto Sans JP", sans-serif;
   margin: 0px;
-  background-color: var(--off-white);
+  background-color: #f6f6f6;
 }
 
 .nav {
   width: 100vw;
   height: 150px;
-  background-color: var(--highlight);
+  background-color: #141926;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,58 +24,24 @@ body {
 }
 
 .content {
-  border-radius: 3px;
-  box-shadow: 0 2px 15px 0 rgb(0 0 0 / 9%);
-  width: 1200px;
-  padding: 21px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 42px;
-  margin-bottom: 42px;
 }
 
 .card-container {
-  background-color: transparent;
-  width: 370px;
-  height: 513px;
 }
 
 .card-container-content {
   /* https://css-tricks.com/absolute-relative-fixed-positioining-how-do-they-differ/#relative */
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
 }
 
 .card-container-content > .card-front > img {
-  width: 100%;
 }
 
 .card-container:hover .card-container-content {
-  transform: rotateY(180deg);
 }
 
 .card-front,
 .card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.card-front {
 }
 
 .card-back {
-  background-color: var(--highlight);
-  color: var(--primary);
-  transform: rotateY(180deg);
 }
